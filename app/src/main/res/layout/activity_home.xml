@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Item Details"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item name"
+        android:textSize="24dp"
+        android:layout_below="@id/texttitle"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/bPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buying Price"
+        android:textSize="24dp"
+        android:layout_below="@id/name"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/sPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Selling Price"
+        android:textSize="24dp"
+        android:layout_below="@id/bPrice"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/exDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expiry Date"
+        android:textSize="24dp"
+        android:layout_below="@id/sPrice"
+        android:inputType="date"
+        />
+    <EditText
+        android:id="@+id/bNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Batch Number"
+        android:textSize="24dp"
+        android:layout_below="@id/exDate"
+        android:inputType="text"
+        />
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Insert new item"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/bNumber"
+        />
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Update item list"
+        android:layout_below="@id/btnInsert"
+        />
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="Delete from list"
+        android:layout_below="@id/btnUpdate"
+        />
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="View List"
+        android:layout_below="@id/btnDelete"
+        />
+
+
+
+</RelativeLayout>
