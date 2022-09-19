@@ -1,6 +1,6 @@
 package com.example.mystockhandler;
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     EditText username, password,retypePassword;
     Button Signin, Signup;
     DBHelper2 DB;

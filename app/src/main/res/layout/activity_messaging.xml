@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Messaging">
+
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Message Here!"
+        android:textColor="@color/primary_orange"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="number"
+        android:inputType="number"
+        android:textColorHint="@color/primary_orange"
+        android:textColor="@color/primary_orange"
+        android:ems="10"
+
+        />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:hint="Text...."
+        android:inputType="text"
+        android:textColorHint="@color/primary_orange"
+        android:textColor="@color/primary_orange"
+        android:ems="10"
+
+
+        />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtMessage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="SEND SMS"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:background="@color/primary_orange"
+
+        />
+
+</RelativeLayout>
+

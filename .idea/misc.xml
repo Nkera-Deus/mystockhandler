@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MyStockHandler/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1405" />
         <entry key="..\:/MyStockHandler/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
         <entry key="..\:/MyStockHandler/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/MyStockHandler/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/MyStockHandler/app/src/main/res/layout/activity_messaging.xml" value="0.20416666666666666" />
+        <entry key="..\:/MyStockHandler/app/src/main/res/menu/my_options_menu.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

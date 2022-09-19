@@ -94,6 +94,14 @@
         android:text="View List"
         android:layout_below="@id/btnDelete"
         />
+    <Button
+        android:id="@+id/btnSendMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="send message"
+        android:layout_below="@id/btnView"
+        />
 
 
 

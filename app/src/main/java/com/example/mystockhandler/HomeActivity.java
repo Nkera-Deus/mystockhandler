@@ -1,6 +1,7 @@
 package com.example.mystockhandler;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
@@ -9,11 +10,11 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends Activity {
     EditText name,bPrice, sPrice, exDate, bNumber;
-    Button insert, update, delete, view;
+    Button insert, update, delete, view, sendSMS;
     DBHelper DB;
     Button register;
 
@@ -32,6 +33,7 @@ public class HomeActivity extends AppCompatActivity {
         update = findViewById(R.id.btnUpdate);
         delete = findViewById(R.id.btnDelete);
         view = findViewById(R.id.btnView);
+        sendSMS = findViewById(R.id.btnSendMessage);
 
 
        DB =new DBHelper(this);
@@ -48,22 +50,14 @@ public class HomeActivity extends AppCompatActivity {
                if (checkinsertdata == true&& !nameTXT.equals("")) {
 
                        Toast.makeText(HomeActivity.this, "New Entry Inserted", Toast.LENGTH_SHORT).show();
-                       name.setText("");
-                       bPrice.setText("");
-                       sPrice.setText("");
-                       exDate.setText("");
-                       bNumber.setText("");
+                       name.setText("");bPrice.setText("");sPrice.setText("");exDate.setText("");bNumber.setText("");
 
                }
                else
                
                
                    Toast.makeText(HomeActivity.this, "New Entry Not Inserted", Toast.LENGTH_SHORT).show();
-               name.setText("");
-               bPrice.setText("");
-               sPrice.setText("");
-               exDate.setText("");
-               bNumber.setText("");
+               name.setText("");bPrice.setText("");sPrice.setText("");exDate.setText("");bNumber.setText("");
 
            }
 
@@ -135,6 +129,13 @@ public class HomeActivity extends AppCompatActivity {
            }
 
 
+       });
+       sendSMS.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent i = new Intent(getApplicationContext(),Messaging.class);
+               startActivity(i);
+           }
        });
 
     }
